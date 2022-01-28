@@ -1,0 +1,15 @@
+.root {
+  padding: 2rem;
+  background: rgba(0,0,0,0.82);
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.root a {
+  text-decoration: none;
+  color: white;
+}

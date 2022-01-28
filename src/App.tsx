@@ -1,25 +1,24 @@
-import React, { Fragment } from 'react';
-import './App.css';
+import React from 'react';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import Contact from './Pages/Contact';
+import Home from './Pages/Home';
+import Privacy from './Pages/Privacy';
+import Terms from './Pages/Terms';
+import Footer from './Components/Footer';
 
 function App() {
   return (
-	<Fragment>
-		<video autoPlay muted loop className="video">
-			<source src="Assets/runematic_background.mp4" type="video/mp4" />
-			Your browser does not support HTML5 video.
-		</video>
-		<div className="content">
-			<div className="titlebox">
-				<h1 className="title">RUNEMATIC</h1>
-				<p className="subtitle">A Story Based Running App</p>
-				<p className="description">
-					Run to different stories that put you in the middle of the action
-					and get you motivated!
-				</p>
-				<div className="coming-soon">Coming Soon</div>
-			</div>
-		</div>
-    </Fragment>
+		<HashRouter>
+			<main>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/terms-of-use" element={<Terms />} />
+					<Route path="/privacy" element={<Privacy />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+			</main>
+			<Footer />
+		</HashRouter>
   );
 }
 

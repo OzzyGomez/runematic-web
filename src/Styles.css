@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.root {
+
+}
+
+.content {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.video {
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -100;
+	-webkit-transform: translate(-50%, -50%);
+		 -moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+
+}
+
+.content {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.titlebox {
+	width: 100%;
+	max-width: 750px;
+	text-align: center;
+	color: white;
+}
+
+.titlebox .title {
+	font-size: 4rem;
+	font-weight: 900;
+	font-style: italic;
+	margin: 0;
+}
+
+.titlebox .subtitle {
+	font-size: 1rem;
+	font-weight: 900;
+	font-style: italic;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.titlebox .description {
+	font-size: 1rem;
+	font-weight: 900;
+	font-style: italic;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.coming-soon {
+	background-color: black;
+	display: inline-block;
+	padding: 1rem 4rem;
+	border-radius: 50px;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 15px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.height {
+	min-height: 100vh;
+}

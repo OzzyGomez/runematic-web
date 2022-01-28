@@ -1,0 +1,12 @@
+.root {
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+}
