@@ -1,13 +1,32 @@
 import React from 'react';
+import classes from './Home.module.css';
 
 const Home = () => {
   return (
 		<div className="root">
 			<div className="content">
-				<video autoPlay muted loop className="video">
-					<source src="https://firebasestorage.googleapis.com/v0/b/runematic-e964d.appspot.com/o/public%2FRunematic.mp4?alt=media&token=089c7278-9761-418b-8385-75936315e410" type="video/mp4" />
-					Your browser does not support HTML5 video.
-				</video>
+				<div className={classes['video-background']}>
+					<div className={classes['video-foreground']}>
+						{/* <iframe
+							title="video"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/kmSD990jyII?controls=0&rel=0&autoplay=1&loop=1&mute=1&&showinfo=0&playlist=rIjg3qyDkQs"
+							frameBorder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowFullScreen
+						/> */}
+						<iframe 
+							width="560"
+							 height="315" 
+							 src="https://www.youtube.com/embed/kmSD990jyII?controls=0&rel=0&autoplay=1&loop=1&mute=1&showinfo=0&playlist=kmSD990jyII" 
+							 title="video" 
+							 frameBorder="0" 
+							 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							 allowFullScreen 
+							/>
+					</div>
+				</div>
 				<div className="content">
 					<div className="titlebox">
 						<h1 className="title">RUNEMATIC</h1>
